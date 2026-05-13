@@ -12,7 +12,7 @@ void main(List<String> args) {
 
   //Entrada
 
-  print("Ingrese tres numeros para mostrar el menor de los tres.");
+  print("Ingrese tres numeros para mostrar el menor de los tres");
   num1 = int.parse(stdin.readLineSync()!);  
   num2 = int.parse(stdin.readLineSync()!);  
   num3 = int.parse(stdin.readLineSync()!);  
@@ -20,10 +20,15 @@ void main(List<String> args) {
   //Proceso y Salida
   
   if (num1 < num2 && num1 < num3) {
-    print("El menor de los tres numeros es: $num1");
+
+    print("El menor de los tres numeros es el: $num1");
+
   } else if (num2 < num1 && num2 < num3) {
-    print("El menor de los tres numeros es: $num2");
+
+    print("El menor de los tres numeros es el: $num2");
+
   } else {
-    print("El menor de los tres numeros es: $num3");
+
+    print("El menor de los tres numeros es el: $num3");
   } 
 }

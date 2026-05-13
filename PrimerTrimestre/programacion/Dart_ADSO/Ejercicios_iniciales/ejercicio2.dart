@@ -12,7 +12,7 @@ void main(List<String> args) {
   String ciudad;
   double temperatura;
 
-  //Entrada
+  //Entrada y proceso
 
   stdout.writeln("Cual es la ciudad?");
   ciudad = stdin.readLineSync()!;

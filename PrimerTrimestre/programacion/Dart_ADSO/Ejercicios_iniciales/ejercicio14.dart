@@ -14,19 +14,25 @@ void main(List<String> args) {
 
   //Entrada
 
-  stdout.writeln("Ingrese el primer número");
+  stdout.writeln("Digite el primer número");
   numero1 = double.parse(stdin.readLineSync()!);
-  stdout.writeln("Ingrese el segundo número");
+
+  stdout.writeln("Digite el segundo número");
   numero2 = double.parse(stdin.readLineSync()!);
 
   //Proceso y Salida
   
   if (numero1 >= numero2) {
+
     resultado = numero1 - numero2;
-    print("El resultado de restarle $numero2 a $numero1 es: $resultado");
+
+    print("El resultado de restarle $numero2 a $numero1 es igual a: $resultado");
+
   } else {
+
     resultado = numero2 - numero1;
-    print("El resultado de restarle $numero1 a $numero2 es: $resultado");
+
+    print("El resultado de restarle $numero1 a $numero2 es igual a: $resultado");
   }
 
 }

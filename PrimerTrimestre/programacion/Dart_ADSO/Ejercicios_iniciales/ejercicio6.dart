@@ -8,22 +8,23 @@ void main(List<String> args) {
 
   //Definición de variables
 
-  double precioProducto;
-  double valorIva ;
-  double precioTotal; 
+  double producto;
+  double Iva;
+  double Total; 
   
   //Entrada
 
   print("Ingrese el precio del producto");
-  precioProducto = double.parse(stdin.readLineSync()!);
-  print("Este producto tendra un impuesto de iva del 19%.");
+  producto = double.parse(stdin.readLineSync()!);
+
+  print("Ha este producto se le aplicara un impuesto del iva perteneciente al 19%.");
 
   //Proceso
 
-  valorIva = precioProducto * 0.19;
-  precioTotal = precioProducto + valorIva;
+  Iva = producto * 0.19;
+  Total = producto + Iva;
 
   //Salida
   
-  print("El precio total a pagar es de: $precioTotal");
+  print("Su total a pagar es de: $Total");
 }

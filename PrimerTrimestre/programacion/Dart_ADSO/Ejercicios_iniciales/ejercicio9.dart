@@ -14,7 +14,7 @@ void main(List<String> args) {
 
   //Entrada
 
-  stdout.writeln("Ingrese el lado del cubo");
+  stdout.writeln("Digite el lado del cubo");
   lado = double.parse(stdin.readLineSync()!);
 
   //Proceso
@@ -23,7 +23,7 @@ void main(List<String> args) {
 
   //Salida
   
-  print("El volumen del cubo es de $volumen");
+  print("El volumen de su cubo es de $volumen");
 
 
 }

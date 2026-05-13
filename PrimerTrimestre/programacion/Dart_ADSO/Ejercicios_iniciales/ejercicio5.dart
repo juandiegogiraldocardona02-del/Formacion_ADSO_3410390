@@ -6,25 +6,25 @@ import 'dart:io';
 
 void main(List<String> args) {
 
-  // Definicion de vbles
+  // Definicion de variables
 
-  double base;
+  double b;
   double altura;
   double area;
 
   //Salida
 
-  stdout.writeln("Ingrese la base del triangulo");
-  base = double.parse(stdin.readLineSync()!);
+  stdout.writeln("Ingrese la base de su triangulo");
+  b = double.parse(stdin.readLineSync()!);
 
-  stdout.writeln("Ingrese la altura del triangulo");
+  stdout.writeln("Ingrese la altura de su triangulo");
   altura = double.parse(stdin.readLineSync()!);
 
   // Proceso
   
-  area = (base * altura) / 2;
+  area = (b * altura) / 2;
 
   // Salida
   
-  print ("El area del triangulo es: $area");
+  print ("El area del triangulo es de: $area");
 }

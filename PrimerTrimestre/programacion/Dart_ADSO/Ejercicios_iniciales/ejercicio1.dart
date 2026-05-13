@@ -12,7 +12,7 @@ void main(List<String> args) {
   String nombre = "CarStreet", genero = "Carreras";
   
 
-  // Entrada - Salida
+  //Salida
   
   print("Su juego es $nombre, del genero de $genero y su valor es de: $precio");
 

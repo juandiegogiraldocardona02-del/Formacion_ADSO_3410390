@@ -18,9 +18,13 @@ void main(List<String> args) {
   //Proceso y Salida
   
   if (numero % 5 == 0) {
-    print("El número $numero es divisible por 5");
+
+    print("El número $numero si es divisible por 5");
+
   } else {
+
     print("El número $numero no es divisible por 5");
+    
   }
 
 }

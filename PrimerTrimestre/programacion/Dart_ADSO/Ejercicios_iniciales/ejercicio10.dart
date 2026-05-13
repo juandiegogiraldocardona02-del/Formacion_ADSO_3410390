@@ -8,13 +8,13 @@ void main(List<String> args) {
 
   //Definición de variables
 
-  double numero;
   double centimetros;
   double milimetros;
+  double numero;
 
   //Entrada
 
-  stdout.writeln("Ingrese los metros dados");
+  stdout.writeln("Ingrese la cantidad de metros que desea convertir a centimetros y milimetros");
   numero = double.parse(stdin.readLineSync()!);
 
   //Proceso
@@ -24,6 +24,6 @@ void main(List<String> args) {
 
   //Salida
   
-  print("Los metros ingresados fueron $numero, su valor en centimetros son $centimetros centimetros y en milimetros es de $milimetros milimetros");
+  print("Los $numero metros, son iguales a $centimetros centimetros y a $milimetros milimetros");
 
 }
