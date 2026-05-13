@@ -15,10 +15,12 @@ void main(List<String> args) {
   }
 
   // Operador OR
+
   bool esFestivo = true;
   bool esSabado = false;
 
   // condicion: si es sabado o es festivo no hay formacion
+
   if(esFestivo == true || esSabado == true){
     print('No hay formacion');
   }else{
@@ -26,6 +28,7 @@ print('Si hay formacion');
   }
 
   // Operador NOT
+
   bool sistemaCaido = true; // Sistema caido
 
   // ignore: dead_code
@@ -38,6 +41,7 @@ print('Si hay formacion');
   // Operadores combinados
   // Aprueba si (Entrego y saco mas de 3.5)
   // O tiene una excusa valida y puede presentar de nuevo el examen
+  
   double nota = 3.4;
   bool entrego = false;
   bool excusaValida = true;

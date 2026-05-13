@@ -7,11 +7,15 @@ void main(List<String> args) {
   edad = int.parse(stdin.readLineSync()!);
   print("Ingrese el dia de la semana");
   diaSemana = stdin.readLineSync()!;
+
   // condicional
+
   if (diaSemana == "lunes") {
     print("Todos hacen aseo");
   }
+
   // condicional doble
+  
   if (edad >= 18) {
     print("Usted es mayor de edad");
   } else {
