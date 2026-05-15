@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Laboratorio Interactivo de CSS - ADSO</title>
+    <style>
+        /* Estilos base para la interfaz */
+        body { font-family: sans-serif; display: flex; flex-direction: column; align-items: center; background: #f4f4f9; padding: 20px; }
+        .controls { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 30px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        
+        /* El elemento que vamos a manipular */
+        #preview-box {
+            background-color: #3498db;
+            width: 200px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            transition: 0.1s; /* Suaviza el cambio visual */
+            border: 5px solid #2c3e50;
+        }
+
+        .code-display { background: #282c34; color: #abb2bf; padding: 15px; border-radius: 5px; width: 100%; max-width: 500px; font-family: monospace; }
+    </style>
+</head>
+<body>
+
+    <h2>Experimento Visual de Dimensiones y Color</h2>
+
+    <div class="controls">
+        <div>
+            <label>Ancho (Width): </label>
+            <input type="range" id="widthInput" min="50" max="100" value="80">
+            <select id="widthUnit">
+                <option value="px">px</option>
+                <option value="%">%</option>
+                <option value="vw">vw</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Tono de Color (HSL): </label>
+            <input type="range" id="hueInput" min="0" max="360" value="200">
+        </div>
+    </div>
+
+    <div id="preview-box">CAJA INTERACTIVA</div>
+
+    <p>Código CSS generado:</p>
+    <div class="code-display" id="cssCode">
+        width: 80%; <br>
+        background-color: hsl(200, 70%, 50%);
+    </div>
+
+    <script>
+        // Seleccionamos los elementos del DOM (la interfaz) para manipularlos
+        const box = document.getElementById('preview-box');
+        const widthIn = document.getElementById('widthInput');
+        const widthUnit = document.getElementById('widthUnit');
+        const hueIn = document.getElementById('hueInput');
+        const cssDisplay = document.getElementById('cssCode');
+
+        /**
+         * Función principal: Actualiza el estilo de la caja en tiempo real.
+         * Se ejecuta cada vez que el usuario mueve un slider o cambia una unidad.
+         */
+        function updateStyles() {
+            // 1. Construimos el valor del ancho combinando el número y la unidad elegida
+            const finalWidth = widthIn.value + widthUnit.value;
+            
+            // 2. Construimos el color usando el formato HSL (Tono, Saturación, Brillo)
+            // Usamos plantillas de texto (backticks) para insertar la variable del slider
+            const finalColor = `hsl(${hueIn.value}, 70%, 50%)`;
+
+            // 3. Aplicamos los cambios directamente al estilo del objeto 'box'
+            box.style.width = finalWidth;
+            box.style.backgroundColor = finalColor;
+
+            // 4. Actualizamos el texto del bloque de código para que el usuario vea qué CSS se generó
+            cssDisplay.innerHTML = `width: ${finalWidth}; <br> background-color: ${finalColor};`;
+        }
+
+        // Agregamos "Escuchadores de Eventos" (EventListeners)
+        // Estos detectan cuando cambias algo y disparan la función updateStyles()
+        widthIn.addEventListener('input', updateStyles);
+        widthUnit.addEventListener('change', updateStyles);
+        hueIn.addEventListener('input', updateStyles);
+
+        // Llamamos a la función una vez al inicio para mostrar los valores por defecto
+        updateStyles();
+    </script>
+</body>
+</html>
