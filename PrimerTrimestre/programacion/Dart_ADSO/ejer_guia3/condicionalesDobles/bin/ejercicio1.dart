@@ -12,7 +12,7 @@ void main(List<String> arguments) {
   stdout.writeln('Ingrese el segundo número:');
   num2 = double.parse(stdin.readLineSync()!);
 
-  //PROCESO
+  //PROCESO y SALIDA
 
   if (num1 < num2) {
     stdout.writeln('Los números en forma ascendente son: $num1, $num2');

@@ -8,12 +8,16 @@ en su empleo de 25 años o más.
 */
 stdout.writeln('Ejercicio 2: Condicionales Simples');
 int edad, antiguedad;
+
 //ENTRADA
+
 stdout.writeln('Ingrese la edad del empleado:');
 edad = int.parse(stdin.readLineSync()!);
 stdout.writeln('Ingrese la antigüedad del empleado:');
 antiguedad = int.parse(stdin.readLineSync()!);
-//PROCESO
+
+//PROCESO y SALIDA
+
 if (edad >= 60 && antiguedad < 25) {
   stdout.writeln('El empleado se jubilará por edad');
 } else if (edad < 60 && antiguedad >= 25) {

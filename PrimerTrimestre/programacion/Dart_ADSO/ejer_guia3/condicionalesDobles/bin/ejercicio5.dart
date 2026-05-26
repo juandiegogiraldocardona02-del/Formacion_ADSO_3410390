@@ -5,11 +5,14 @@ pedida y el precio unitario. Además, si se paga de contado todo tiene un descue
 programa que calcule y muestre en pantalla el costo total de la orden, tanto para el pago de contado como
 para el caso de pago de crédito. Para el caso de pago de contado el usuario ingresa 1, para pago a crédito el
 usuario ingresa 2.*/
+
 void main(List<String> arguments) {
   stdout.writeln('Ejercicio 5: Condicionales Dobles');
   int cantidadBrochas, cantidadRodillos, tipoPago;
   double precioUnitarioBrochas, precioUnitarioRodillos, totalBrochas, totalRodillos, totalCompra, descuentoPagoContado, totalPagar;
+
   //ENTRADA
+
   stdout.writeln('Ingrese la cantidad de brochas de cerda:');
   cantidadBrochas = int.parse(stdin.readLineSync()!);
   stdout.writeln('Ingrese el precio unitario de las brochas de cerda:');
@@ -20,7 +23,9 @@ void main(List<String> arguments) {
   precioUnitarioRodillos = double.parse(stdin.readLineSync()!);
   stdout.writeln('Ingrese el tipo de pago (1 para contado, 2 para crédito):');
   tipoPago = int.parse(stdin.readLineSync()!);
-  //PROCESO
+
+  //PROCESO Y SALIDA
+
   totalBrochas = cantidadBrochas * precioUnitarioBrochas * 0.80; //20% de descuento
   totalRodillos = cantidadRodillos * precioUnitarioRodillos * 0.85; //15% de descuento
   totalCompra = totalBrochas + totalRodillos;

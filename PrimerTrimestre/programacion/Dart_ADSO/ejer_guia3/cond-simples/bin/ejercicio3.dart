@@ -10,19 +10,25 @@ stdout.writeln('Ejercicio 3: Condicionales Simples');
 String? modelo;
 double precioUnitario, precioTotal, descuento;
 int cantidad;
+
 //ENTRADA
+
 stdout.writeln('Ingrese el modelo del traje:');
 modelo = stdin.readLineSync();
 stdout.writeln('Ingrese el precio unitario del traje:');
 precioUnitario = double.parse(stdin.readLineSync()!);
 stdout.writeln('Ingrese la cantidad de trajes ordenados:');
 cantidad = int.parse(stdin.readLineSync()!);
+
 //PROCESO
+
 precioTotal = precioUnitario * cantidad;
 if (cantidad >= 3) {
   descuento = precioTotal * 0.17;
   precioTotal = precioTotal - descuento; //precioTotal = precioTotal - descuento
 }
+
 //SALIDA
+
 stdout.writeln('El cliente ordenó $cantidad trajes del modelo "$modelo", con un precio unitario de \$$precioUnitario, el precio total a pagar es: \$$precioTotal');
 }
