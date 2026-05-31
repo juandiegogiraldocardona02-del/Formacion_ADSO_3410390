@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura divs</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        padding: 1.5rem;
+    }
+    div.main{
+            border: 2px solid #000;
+            color: #575454;
+            font-size: 1rem;
+
+            div.header{
+            background-color: #72e6f6;
+            border: 2px solid #000;
+            padding: 1rem;
+            font-size: 1.5rem;
+            display: flex ;
+            Flex-direction: row;
+            justify-content: center;
+            align-items: center; 
+
+                div.content{
+                background-color: #f67280;
+                border: 2px solid #000;
+                padding: 1rem;
+                font-size: 1.2rem;
+
+                    div.footer{
+                    background-color: #c06c84;
+                    border: 2px solid #000;
+                    padding: 1rem;
+                    font-size: 1.2rem;
+                    }
+                }
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <header> 
+    <h2>Divs anidados</h2>
+        <h1>12. Estructura Divs</h1>
+        <h2>Con esta etiqueta podemos generar estructuras de contenido en nuestra página web(Forma antigua)</h2>
+    </header>
+    <section>
+        <div class="main">
+            <div class="header">
+                <div class="content">
+                    <h4>Este es el Div para el contenido</h4>
+                    <div class="footer">
+                        <h4>Este es el pie de página</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
