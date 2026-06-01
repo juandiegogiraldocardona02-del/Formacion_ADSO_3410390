@@ -1,0 +1,38 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Dart_ADSO",
+            "cwd": "programacion/Dart_ADSO",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "cond-dobles",
+            "cwd": "programacion/Dart_ADSO/ejeCondicionalesComplementarios/cond-dobles",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "cond-simples",
+            "cwd": "programacion/Dart_ADSO/ejeCondicionalesComplementarios/cond-simples",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "cond-simples",
+            "cwd": "programacion/Dart_ADSO/ejer_guia3/cond-simples",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "condicionalesDobles",
+            "cwd": "programacion/Dart_ADSO/ejer_guia3/condicionalesDobles",
+            "request": "launch",
+            "type": "dart"
+        }
+    ]
+}

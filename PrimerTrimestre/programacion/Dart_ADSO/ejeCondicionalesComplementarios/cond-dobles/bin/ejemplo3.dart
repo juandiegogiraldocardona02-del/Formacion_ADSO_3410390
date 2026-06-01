@@ -1,11 +1,5 @@
 import 'dart:io';
-/*El área de Bienestar al Aprendiz del SENA ha actualizado las políticas para
-el servicio de restaurante. Para recibir el almuerzo subsidiado por un valor de $2.000,
-el aprendiz debe cumplir simultáneamente con los siguientes requisitos: pertenecer al 
-estrato 1 o al estrato 2, Y tener cero (0) faltas disciplinarias registradas en el sistema. 
-Si el aprendiz no cumple con todas estas condiciones, debe cancelar la tarifa regular de $6.000.
-Solicite al usuario su nombre, su estrato y la cantidad de faltas disciplinarias. Utilice un
-condicional doble con operadores lógicos para determinar el valor a pagar.*/
+/*El área de Bienestar al Aprendiz del SENA ha actualizado las políticas para el servicio de restaurante. Para recibir el almuerzo subsidiado por un valor de $2.000, el aprendiz debe cumplir simultáneamente con los siguientes requisitos: pertenecer al estrato 1 o al estrato 2, Y tener cero (0) faltas disciplinarias registradas en el sistema. Si el aprendiz no cumple con todas estas condiciones, debe cancelar la tarifa regular de $6.000. Solicite al usuario su nombre, su estrato y la cantidad de faltas disciplinarias. Utilice un condicional doble con operadores lógicos para determinar el valor a pagar. */
 
 void main(List<String> arguments) {
   print('--- SERVICIO DE RESTAURANTE SUBSIDIADO ---');
